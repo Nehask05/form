@@ -1,20 +1,14 @@
 $(document).ready(function () {
     try {
-        // Get the current count from Local Storage or initialize it to 0
-        let viewCount = parseInt(localStorage.getItem("viewCount")) || 0;
+        // Remove the view count from Local Storage if you want to reset it
+        localStorage.removeItem("viewCount");
 
-        // Increment the count
-        viewCount++;
-
-        // Save the updated count back to Local Storage
-        localStorage.setItem("viewCount", viewCount);
-
-        // Display the count on the webpage
-        $("#viewCount").text(`View Count: ${viewCount}`);
+        // Optionally, you can hide the view count element on the page (if it exists)
+        $("#viewCount").hide();
 
         // Debugging log
-        console.log(`View count updated successfully: ${viewCount}`);
+        console.log("View count removed successfully.");
     } catch (error) {
-        console.error("Error updating view count:", error);
+        console.error("Error removing view count:", error);
     }
 });
