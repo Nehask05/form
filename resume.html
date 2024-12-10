@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume - Neha SK</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Resume</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="biodata.html">Bio-data</a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Education</h2>
+            <ul>
+                <li>B.Tech in CSE, 5th Semester, VTU - CGPA: 9.8</li>
+                <li>PUC, PACE Karnataka</li>
+            </ul>
+        </section>
+        <button onclick="downloadPDF()">Download Resume as PDF</button>
+    </main>
+    <footer>
+        <p>© 2024 Neha SK. All rights reserved.</p>
+    </footer>
+    <script>
+        function downloadPDF() {
+            window.location.href = "resume.pdf";
+        }
+    </script>
+</body>
+</html>

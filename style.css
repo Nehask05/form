@@ -1,0 +1,63 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+}
+
+header {
+    background-color: #6a5acd;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+header h1 {
+    animation: colorChange 3s infinite;
+}
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: white;
+}
+
+main {
+    padding: 20px;
+}
+
+button {
+    background-color: #6a5acd;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #836fff;
+}
+
+/* Footer styling */
+footer {
+    background-color: #6a5acd;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed; /* Makes the footer stick to the bottom */
+    bottom: 0;
+    width: 100%; /* Ensures the footer spans the entire width */
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+    font-size: 14px;
+}
+
+/* Ensure main content doesn't overlap with footer */
+main {
+    margin-bottom: 50px; /* Add spacing for footer */
+}
+@keyframes colorChange {
+    0% { color: #17010c; }
+    50% { color: #6a5acd; }
+    100% { color: #055905; }
+}
